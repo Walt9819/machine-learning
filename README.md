@@ -10,8 +10,9 @@ Recursos para la enseñanza y aprendizaje de machine learning en Python
   - Breast Cancer Wisconsin Diagnostic Dataset
 
 <h2 id="codes">Códigos</h2>
+
 - Introducción
-  - Introducción a Machine Learning
+  - [Introducción a Machine Learning](code/1_Introduccion.ipynb)
   - Pre-procesamiento
 
 - Aprendizaje supervisado
