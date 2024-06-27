@@ -12,8 +12,8 @@ Recursos para la enseñanza y aprendizaje de machine learning en Python
 <h2 id="codes">Códigos</h2>
 
 - Introducción
-  - [Introducción a Machine Learning](code/1_Introduccion.ipynb)
-  - Pre-procesamiento
+  - [Introducción a Machine Learning](code/1_introduccion.ipynb)
+  - [Pre-procesamiento](code/2_preprocesamiento.ipynb)
 
 - Aprendizaje supervisado
   - Regresión lineal
@@ -30,6 +30,23 @@ Recursos para la enseñanza y aprendizaje de machine learning en Python
 
 <h2 id="datasets">Datasets</h2>
 El repositorio hace uso de cuatro conjuntos de datos abiertos:
+
+### Titanic (Titanic dataset). Tomado de [Kaggle](https://www.kaggle.com/datasets/brendan45774/test-file/data).
+#### Descripción
+Datos de los pasajeros del Titanic, así como si sobrevivieron o no al naufragio.
+
+
+#### Valores
+- PassengerId: Número de pasajero
+- Survived: 0 = Fallecido, 1 = Sobreviviente
+- Pclass: Clase del pasajero, 1 = Primera clase, 2 = Segunda clase, 3 = Tercera clase
+- Name: Nombre del pasajero
+- Sex: Género
+- Age: Edad del pasajero
+- SibSp: Número de hermanos o cónyuges a bordo
+- Parch: Número de padres o hijos a bordo
+- Ticket: Número de ticket
+- Fare: Tarifa del ticket
 
 ### Rendimiento de alumnos en exámenes (Students Performance in Exams). Tomado de [Kaggle](https://www.kaggle.com/datasets/spscientist/students-performance-in-exams).
 #### Descripción
