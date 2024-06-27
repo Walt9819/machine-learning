@@ -9,7 +9,7 @@ Recursos para la enseñanza y aprendizaje de machine learning en Python
   - Data Developer Salary in 2024
   - Breast Cancer Wisconsin Diagnostic Dataset
 
-## Códigos {#codes}
+<h2 id="codes">Códigos</h2>
 - Introducción
   - Introducción a Machine Learning
   - Pre-procesamiento
@@ -27,7 +27,7 @@ Recursos para la enseñanza y aprendizaje de machine learning en Python
   - Jerarquías
   - Reducción de dimensionalidad (Principal Component Analysis)
 
-## Datasets {#datasets}
+<h2 id="datasets">Datasets</h2>
 El repositorio hace uso de cuatro conjuntos de datos abiertos:
 
 ### Rendimiento de alumnos en exámenes (Students Performance in Exams). Tomado de [Kaggle](https://www.kaggle.com/datasets/spscientist/students-performance-in-exams).
