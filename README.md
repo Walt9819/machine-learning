@@ -14,6 +14,7 @@ Recursos para la enseñanza y aprendizaje de machine learning en Python
 - Introducción
   - [Introducción a Machine Learning](code/1_introduccion.ipynb)
   - [Pre-procesamiento](code/2_preprocesamiento.ipynb)
+  - [Regresión lineal](code/3_regresion_lineal.ipynb)
 
 - Aprendizaje supervisado
   - Regresión lineal
@@ -67,7 +68,7 @@ Este conjunto de datos consiste en las calificaciones obtenidas por los estudian
 Este conjunto de datos contiene los registros médicos de 5000 pacientes que sufrieron insuficiencia cardíaca, recopilados durante su período de seguimiento, donde cada perfil de paciente tiene 13 características clínicas.
 
 #### Valores
--edad: edad del paciente (años)
+- edad: edad del paciente (años)
 - anemia: disminución de glóbulos rojos o hemoglobina (booleano)
 - creatinina fosfocinasa (CPK): nivel de la enzima CPK en la sangre (mcg/L)
 - diabetes: si el paciente tiene diabetes (booleano)

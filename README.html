@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+        <html>
+        <head>
+            <meta charset="UTF-8">
+            <title>Machine learning</title>
+            <style>
+/* From extension vscode.github */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+.vscode-dark img[src$=\#gh-light-mode-only],
+.vscode-light img[src$=\#gh-dark-mode-only],
+.vscode-high-contrast:not(.vscode-high-contrast-light) img[src$=\#gh-light-mode-only],
+.vscode-high-contrast-light img[src$=\#gh-dark-mode-only] {
+	display: none;
+}
+
+</style>
+            
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/markdown.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/highlight.css">
+<style>
+            body {
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', system-ui, 'Ubuntu', 'Droid Sans', sans-serif;
+                font-size: 14px;
+                line-height: 1.6;
+            }
+        </style>
+        <style>
+.task-list-item {
+    list-style-type: none;
+}
+
+.task-list-item-checkbox {
+    margin-left: -20px;
+    vertical-align: middle;
+    pointer-events: none;
+}
+</style>
+<style>
+:root {
+  --color-note: #0969da;
+  --color-tip: #1a7f37;
+  --color-warning: #9a6700;
+  --color-severe: #bc4c00;
+  --color-caution: #d1242f;
+  --color-important: #8250df;
+}
+
+</style>
+<style>
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-note: #2f81f7;
+    --color-tip: #3fb950;
+    --color-warning: #d29922;
+    --color-severe: #db6d28;
+    --color-caution: #f85149;
+    --color-important: #a371f7;
+  }
+}
+
+</style>
+<style>
+.markdown-alert {
+  padding: 0.5rem 1rem;
+  margin-bottom: 16px;
+  color: inherit;
+  border-left: .25em solid #888;
+}
+
+.markdown-alert>:first-child {
+  margin-top: 0
+}
+
+.markdown-alert>:last-child {
+  margin-bottom: 0
+}
+
+.markdown-alert .markdown-alert-title {
+  display: flex;
+  font-weight: 500;
+  align-items: center;
+  line-height: 1
+}
+
+.markdown-alert .markdown-alert-title .octicon {
+  margin-right: 0.5rem;
+  display: inline-block;
+  overflow: visible !important;
+  vertical-align: text-bottom;
+  fill: currentColor;
+}
+
+.markdown-alert.markdown-alert-note {
+  border-left-color: var(--color-note);
+}
+
+.markdown-alert.markdown-alert-note .markdown-alert-title {
+  color: var(--color-note);
+}
+
+.markdown-alert.markdown-alert-important {
+  border-left-color: var(--color-important);
+}
+
+.markdown-alert.markdown-alert-important .markdown-alert-title {
+  color: var(--color-important);
+}
+
+.markdown-alert.markdown-alert-warning {
+  border-left-color: var(--color-warning);
+}
+
+.markdown-alert.markdown-alert-warning .markdown-alert-title {
+  color: var(--color-warning);
+}
+
+.markdown-alert.markdown-alert-tip {
+  border-left-color: var(--color-tip);
+}
+
+.markdown-alert.markdown-alert-tip .markdown-alert-title {
+  color: var(--color-tip);
+}
+
+.markdown-alert.markdown-alert-caution {
+  border-left-color: var(--color-caution);
+}
+
+.markdown-alert.markdown-alert-caution .markdown-alert-title {
+  color: var(--color-caution);
+}
+
+</style>
+        
+        </head>
+        <body class="vscode-body vscode-light">
+            <h1 id="machine-learning">Machine learning</h1>
+<p>Recursos para la enseñanza y aprendizaje de machine learning en Python</p>
+<h1 id="índice">Índice</h1>
+<ul>
+<li><a href="#codes">Códigos</a></li>
+<li><a href="#datasets">Datasets</a>
+<ul>
+<li>Students Performance in Exams</li>
+<li>Heart Failure Prediction - Clinical Records</li>
+<li>Data Developer Salary in 2024</li>
+<li>Breast Cancer Wisconsin Diagnostic Dataset</li>
+</ul>
+</li>
+</ul>
+<h2 id="codes">Códigos</h2>
+<ul>
+<li>
+<p>Introducción</p>
+<ul>
+<li><a href="code/1_introduccion.ipynb">Introducción a Machine Learning</a></li>
+<li><a href="code/2_preprocesamiento.ipynb">Pre-procesamiento</a></li>
+<li><a href="code/3_regresion_lineal.ipynb">Regresión lineal</a></li>
+</ul>
+</li>
+<li>
+<p>Aprendizaje supervisado</p>
+<ul>
+<li>Regresión lineal</li>
+<li>Regresión logística</li>
+<li>K-vecinos más cercanos</li>
+<li>Árboles de decisión</li>
+<li>Máquina de soporte de vectores (Support Vector Machine)</li>
+<li>Métodos de ensamble</li>
+</ul>
+</li>
+<li>
+<p>Aprendizaje no supervisado</p>
+<ul>
+<li>K-medias</li>
+<li>Jerarquías</li>
+<li>Reducción de dimensionalidad (Principal Component Analysis)</li>
+</ul>
+</li>
+</ul>
+<h2 id="datasets">Datasets</h2>
+El repositorio hace uso de cuatro conjuntos de datos abiertos:
+<h3 id="titanic-titanic-dataset-tomado-de-kaggle">Titanic (Titanic dataset). Tomado de <a href="https://www.kaggle.com/datasets/brendan45774/test-file/data">Kaggle</a>.</h3>
+<h4 id="descripción">Descripción</h4>
+<p>Datos de los pasajeros del Titanic, así como si sobrevivieron o no al naufragio.</p>
+<h4 id="valores">Valores</h4>
+<ul>
+<li>PassengerId: Número de pasajero</li>
+<li>Survived: 0 = Fallecido, 1 = Sobreviviente</li>
+<li>Pclass: Clase del pasajero, 1 = Primera clase, 2 = Segunda clase, 3 = Tercera clase</li>
+<li>Name: Nombre del pasajero</li>
+<li>Sex: Género</li>
+<li>Age: Edad del pasajero</li>
+<li>SibSp: Número de hermanos o cónyuges a bordo</li>
+<li>Parch: Número de padres o hijos a bordo</li>
+<li>Ticket: Número de ticket</li>
+<li>Fare: Tarifa del ticket</li>
+</ul>
+<h3 id="rendimiento-de-alumnos-en-exámenes-students-performance-in-exams-tomado-de-kaggle">Rendimiento de alumnos en exámenes (Students Performance in Exams). Tomado de <a href="https://www.kaggle.com/datasets/spscientist/students-performance-in-exams">Kaggle</a>.</h3>
+<h4 id="descripción-1">Descripción</h4>
+<p>Este conjunto de datos consiste en las calificaciones obtenidas por los estudiantes en varias asignaturas.</p>
+<h4 id="valores-1">Valores</h4>
+<ul>
+<li>Género</li>
+<li>Raza/etnicidad/grupo</li>
+<li>Nivel de estudios de los padres</li>
+<li>Lunch</li>
+<li>Preparación para el examen</li>
+<li>Calificación matemáticas</li>
+<li>Calificación lectura</li>
+<li>Calificación escritura</li>
+</ul>
+<h3 id="predicción-de-insuficiencia-cardiaca-heart-failure-prediction---clinical-records-tomado-de-kaggle">Predicción de insuficiencia cardiaca (Heart Failure Prediction - Clinical Records). Tomado de <a href="https://www.kaggle.com/datasets/aadarshvelu/heart-failure-prediction-clinical-records">Kaggle</a>.</h3>
+<h4 id="descripción-2">Descripción</h4>
+<p>Este conjunto de datos contiene los registros médicos de 5000 pacientes que sufrieron insuficiencia cardíaca, recopilados durante su período de seguimiento, donde cada perfil de paciente tiene 13 características clínicas.</p>
+<h4 id="valores-2">Valores</h4>
+<ul>
+<li>edad: edad del paciente (años)</li>
+<li>anemia: disminución de glóbulos rojos o hemoglobina (booleano)</li>
+<li>creatinina fosfocinasa (CPK): nivel de la enzima CPK en la sangre (mcg/L)</li>
+<li>diabetes: si el paciente tiene diabetes (booleano)</li>
+<li>fracción de eyección: porcentaje de sangre que sale del corazón en cada - contracción (porcentaje)</li>
+<li>hipertensión: si el paciente tiene hipertensión (booleano)</li>
+<li>plaquetas: plaquetas en la sangre (kiloplaquetas/mL)</li>
+<li>sexo: mujer u hombre (binario)</li>
+<li>creatinina sérica: nivel de creatinina sérica en la sangre (mg/dL)</li>
+<li>sodio sérico: nivel de sodio sérico en la sangre (mEq/L)</li>
+<li>fumador: si el paciente fuma o no (booleano)</li>
+<li>tiempo: período de seguimiento (días)</li>
+<li>evento de muerte: si el paciente murió durante el período de seguimiento (booleano)</li>
+</ul>
+<h3 id="salario-de-data-developer-en-2024-data-developer-salary-in-2024-tomado-de-kaggle">Salario de <em>Data Developer</em> en 2024 (Data Developer Salary in 2024). Tomado de <a href="https://www.kaggle.com/datasets/zeesolver/data-eng-salary-2024">Kaggle</a>.</h3>
+<h4 id="descripción-3">Descripción</h4>
+<p>El conjunto de datos de 2024 sobre salarios y empleo de desarrolladores de datos proporciona información clave sobre salarios, títulos, experiencia, tipos de empleo, residencias, trabajo remoto, ubicaciones y tamaños de empresas, permitiendo analizar tendencias salariales y patrones de empleo en el sector.</p>
+<h4 id="valores-3">Valores</h4>
+<ul>
+<li>nivel_de_experiencia: Nivel de experiencia profesional (por ejemplo, junior, medio, senior).</li>
+<li>tipo_de_empleo: Tipo de contrato de trabajo (por ejemplo, tiempo completo, tiempo parcial, contrato).</li>
+<li>título_del_trabajo: El rol o título específico del empleado (por ejemplo, Ingeniero de Datos).</li>
+<li>salario: La compensación recibida, en la moneda original.</li>
+<li>moneda_del_salario: La moneda en la que se paga el salario.</li>
+<li>salario_en_usd: El salario convertido a dólares estadounidenses para comparación.</li>
+<li>residencia_del_empleado: El lugar donde reside el empleado.</li>
+<li>proporción_de_trabajo_remoto: Porcentaje de trabajo realizado de forma remota.</li>
+<li>ubicación_de_la_empresa: La ubicación geográfica de la empresa.</li>
+<li>tamaño_de_la_empresa: La escala de la empresa, a menudo basada en el número de empleados.</li>
+</ul>
+<h3 id="diagnóstico-de-cáncer-de-mama-de-winsconsin-breast-cancer-wisconsin-diagnostic-dataset-tomado-de-kaggle">Diagnóstico de cáncer de mama de Winsconsin (Breast Cancer Wisconsin Diagnostic Dataset). Tomado de <a href="https://www.kaggle.com/datasets/utkarshx27/breast-cancer-wisconsin-diagnostic-dataset">Kaggle</a></h3>
+<h4 id="descripción-4">Descripción</h4>
+<p>Características de biopsias para la clasificación de 569 masas mamarias malignas (cáncer) y benignas (no cáncer).</p>
+<h4 id="valores-4">Valores</h4>
+<ul>
+<li>x.radius_mean: Promedio del radio de las células tumorales.</li>
+<li>x.texture_mean: Promedio de la textura de las células tumorales.</li>
+<li>x.perimeter_mean: Promedio del perímetro de las células tumorales.</li>
+<li>x.area_mean: Promedio del área de las células tumorales.</li>
+<li>x.smoothness_mean: Promedio de la suavidad de las células tumorales.</li>
+<li>x.compactness_mean: Promedio de la compacidad de las células tumorales.</li>
+<li>x.concavity_mean: Promedio de la concavidad de las células tumorales.</li>
+<li>x.concave_points_mean: Promedio del número de porciones cóncavas del contorno de las células tumorales.</li>
+<li>x.symmetry_mean: Promedio de la simetría de las células tumorales.</li>
+<li>x.fractal_dimension_mean: Promedio de la &quot;aproximación de línea costera&quot; de las células tumorales.</li>
+<li>x.radius_se: Error estándar del radio de las células tumorales.</li>
+<li>x.texture_se: Error estándar de la textura de las células tumorales.</li>
+<li>x.perimeter_se: Error estándar del perímetro de las células tumorales.</li>
+<li>x.area_se: Error estándar del área de las células tumorales.</li>
+<li>x.smoothness_se: Error estándar de la suavidad de las células tumorales.</li>
+<li>x.compactness_se: Error estándar de la compacidad de las células tumorales.</li>
+<li>x.concavity_se: Error estándar de la concavidad de las células tumorales.</li>
+<li>x.concave_points_se: Error estándar del número de porciones cóncavas del contorno de las células tumorales.</li>
+<li>x.symmetry_se: Error estándar de la simetría de las células tumorales.</li>
+<li>x.fractal_dimension_se: Error estándar de la &quot;aproximación de línea costera&quot; de las células tumorales.</li>
+<li>x.radius_worst: Peor (mayor) radio de las células tumorales.</li>
+<li>x.texture_worst: Peor (más severa) textura de las células tumorales.</li>
+<li>x.perimeter_worst: Peor (mayor) perímetro de las células tumorales.</li>
+<li>x.area_worst: Peor (mayor) área de las células tumorales.</li>
+<li>x.smoothness_worst: Peor (más severa) suavidad de las células tumorales.</li>
+<li>x.compactness_worst: Peor (más severa) compacidad de las células tumorales.</li>
+<li>x.concavity_worst: Peor (más severa) concavidad de las células tumorales.</li>
+<li>x.concave_points_worst: Peor (más severo) número de porciones cóncavas del contorno de las células tumorales.</li>
+<li>x.symmetry_worst: Peor (más severa) simetría de las células tumorales.</li>
+<li>x.fractal_dimension_worst: Peor (más severa) &quot;aproximación de línea costera&quot; de las células tumorales.</li>
+<li>y.target: Clasificación del tumor (maligno o benigno).</li>
+</ul>
+<h3 id="canciones-más-escuchadas-en-spotify-en-2024-most-streamed-spotify-songs-2024-tomado-de-kaggle">Canciones más escuchadas en Spotify en 2024 (Most Streamed Spotify Songs 2024). Tomado de <a href="https://www.kaggle.com/datasets/nelgiriyewithana/most-streamed-spotify-songs-2024">Kaggle</a>.</h3>
+<h4 id="descripción-5">Descripción</h4>
+<p>Este conjunto de datos presenta una compilación exhaustiva de las canciones más reproducidas en Spotify en 2024.</p>
+<h4 id="valores-5">Valores</h4>
+<ul>
+<li>Nombre de la canción: Nombre de la canción.</li>
+<li>Nombre del álbum: Nombre del álbum al que pertenece la canción.</li>
+<li>Artista: Nombre del artista(s) de la canción.</li>
+<li>Fecha de lanzamiento: Fecha en que se lanzó la canción.</li>
+<li>ISRC: Código Internacional de Grabación Estándar de la canción.</li>
+<li>Ranking histórico: Clasificación de la canción basada en su popularidad histórica.</li>
+<li>Puntuación de la canción: Puntuación asignada a la canción basada en varios factores.</li>
+<li>Reproducciones en Spotify: Número total de reproducciones en Spotify.</li>
+<li>Número de listas de reproducción de Spotify: Número de listas de reproducción de Spotify que incluyen la canción.</li>
+<li>Alcance en listas de reproducción de Spotify: Alcance de la canción en listas de reproducción de Spotify.</li>
+<li>Popularidad en Spotify: Puntuación de popularidad de la canción en Spotify.</li>
+<li>Visualizaciones en YouTube: Total de visualizaciones del video oficial de la canción en YouTube.</li>
+<li>Me gusta en YouTube: Total de &quot;me gusta&quot; en el video oficial de la canción en YouTube.</li>
+<li>Publicaciones en TikTok: Número de publicaciones en TikTok que presentan la canción.</li>
+<li>Me gusta en TikTok: Total de &quot;me gusta&quot; en publicaciones de TikTok que presentan la canción.</li>
+<li>Visualizaciones en TikTok: Total de visualizaciones en publicaciones de TikTok que presentan la canción.</li>
+<li>Alcance en listas de reproducción de YouTube: Alcance de la canción en listas de reproducción de YouTube.</li>
+<li>Número de listas de reproducción de Apple Music: Número de listas de reproducción de Apple Music que incluyen la canción.</li>
+<li>Reproducciones en radio: Número de veces que la canción ha sido reproducida en estaciones de radio.</li>
+<li>Reproducciones en SiriusXM: Número de veces que la canción ha sido reproducida en SiriusXM.</li>
+<li>Número de listas de reproducción de Deezer: Número de listas de reproducción de Deezer que incluyen la canción.</li>
+<li>Alcance en listas de reproducción de Deezer: Alcance de la canción en listas de reproducción de Deezer.</li>
+<li>Número de listas de reproducción de Amazon: Número de listas de reproducción de Amazon Music que incluyen la canción.</li>
+<li>Reproducciones en Pandora: Número total de reproducciones en Pandora.</li>
+<li>Estaciones de la canción en Pandora: Número de estaciones de Pandora que presentan la canción.</li>
+<li>Reproducciones en Soundcloud: Número total de reproducciones en Soundcloud.</li>
+<li>Conteos en Shazam: Número total de veces que la canción ha sido buscada en Shazam.</li>
+<li>Popularidad en TIDAL: Puntuación de popularidad de la canción en TIDAL.</li>
+<li>Canción explícita: Indica si la canción contiene contenido explícito.</li>
+</ul>
+
+            
+            
+        </body>
+        </html>
