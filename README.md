@@ -15,6 +15,8 @@ Recursos para la enseñanza y aprendizaje de machine learning en Python
   - [Introducción a Machine Learning](code/1_introduccion.ipynb)
   - [Pre-procesamiento](code/2_preprocesamiento.ipynb)
   - [Regresión lineal](code/3_regresion_lineal.ipynb)
+  - [Regresión polinomios](code/4_regresion_polinomica.ipynb)
+  - [Regresión logística](code/5_regresion_logistica.ipynb)
 
 - Aprendizaje supervisado
   - Regresión lineal
